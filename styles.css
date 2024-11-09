@@ -193,3 +193,16 @@ body.confirmation-page {
 .button:hover {
     background: #0056b3;
 }
+.button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    transition: background 0.3s, transform 0.3s;
+}
+.section {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.section.visible {
+    opacity: 1;
+}
