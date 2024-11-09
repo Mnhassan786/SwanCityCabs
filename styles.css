@@ -58,6 +58,10 @@
         .button:hover {
             background: #0056b3;
         }
+body.booking-page {
+    background: url('images/booking-background.jpg') center/cover no-repeat;
+    color: white;
+}
 <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -157,6 +161,10 @@
         .button:hover {
             background-color: #0056b3;
         }
+body.confirmation-page {
+    background: url('images/confirmation-background.jpg') center/cover no-repeat;
+    color: white;
+}
 #showcase {
     min-height: 400px;
     background: url('taxi.jpg') center/cover no-repeat;
