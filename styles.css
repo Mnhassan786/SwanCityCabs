@@ -91,11 +91,12 @@ body.booking-page {
         form div {
             margin-bottom: 20px;
         }
-        form label {
-            font-weight: 600;
-            display: block;
-            margin-bottom: 5px;
-        }
+      form label {
+    color: #333; /* Dark gray for visibility */
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
         form input[type="text"],
         form input[type="tel"],
         form input[type="email"],
