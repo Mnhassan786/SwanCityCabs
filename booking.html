@@ -93,7 +93,7 @@
         // Send email using EmailJS
         emailjs.send("service_i3kvzay", "template_72y2q7g", formData)
             .then(function(response) {
-                alert("Booking confirmed! A confirmation email has been sent.");
+               window.location.href = "confirmation.html"; // Redirects to confirmation page
             }, function(error) {
                 alert("Failed to send confirmation email.");
             });
