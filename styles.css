@@ -207,3 +207,6 @@ body.confirmation-page {
 .section.visible {
     opacity: 1;
 }
+body.booking-page form label {
+    color: #333; /* Dark gray specifically for Booking page */
+}
