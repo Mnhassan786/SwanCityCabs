@@ -81,6 +81,12 @@ body.booking-page {
             padding: 20px;
             text-align: center;
         }
+body.booking-page form label {
+    color: #333 !important; /* Force the color to dark gray */
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
         form {
             background: #fff;
             padding: 30px;
@@ -206,7 +212,4 @@ body.confirmation-page {
 
 .section.visible {
     opacity: 1;
-}
-body.booking-page form label {
-    color: #333; /* Dark gray specifically for Booking page */
 }
