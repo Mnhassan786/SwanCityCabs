@@ -29,7 +29,7 @@
 <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
 <script type="text/javascript">
     (function(){
-        emailjs.init("AoqXXV5SSKbjrJw4m"); // Replace with your EmailJS user ID
+        emailjs.init("service_i3kvzay"); // Replace with your EmailJS user ID
     })();
 </script>
 </head>
@@ -72,4 +72,31 @@
         </form>
     </div>
 </body>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("AoqXXV5SSKbjrJw4m"); // Replace with your EmailJS user ID
+    })();
+</script>
+
+<script>
+    document.getElementById("booking-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevents default form submission
+        
+        // Collect form data
+        const formData = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            pickup: document.getElementById("pickup").value,
+            destination: document.getElementById("destination").value,
+        };
+
+        // Send email using EmailJS
+        emailjs.send("service_i3kvzay", "template_72y2q7g", formData)
+            .then(function(response) {
+                alert("Booking confirmed! A confirmation email has been sent.");
+            }, function(error) {
+                alert("Failed to send confirmation email.");
+            });
+    });
+</script>
 </html>
